@@ -2,8 +2,8 @@
 
 using namespace ComputeGraph;
 
-BoolResourceType::BoolResourceType() : ResourceType(ResourceTypeKind::BOOL) {}
+BoolResourceType::BoolResourceType() : ResourceType() {}
 
 bool BoolResourceType::equal(std::shared_ptr<ResourceType> const& other) const {
-  return other->getResourceKind() == ResourceTypeKind::BOOL;
+  return std::dynamic_pointer_cast<BoolResourceType>(other) != nullptr;
 }

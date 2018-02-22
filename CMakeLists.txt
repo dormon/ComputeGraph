@@ -28,14 +28,12 @@ set(SOURCES
 
 set(INCLUDES
   src/${LIB_NAME}/BoolResource.h
-  src/${LIB_NAME}/CustomResourceType.h
   src/${LIB_NAME}/Function.h
   src/${LIB_NAME}/Fwd.h
   src/${LIB_NAME}/IfStatement.h
   src/${LIB_NAME}/Input.h
   src/${LIB_NAME}/Resource.h
   src/${LIB_NAME}/ResourceType.h
-  src/${LIB_NAME}/ResourceTypeKind.h
   src/${LIB_NAME}/Signal.h
   src/${LIB_NAME}/SignalReacter.h
   src/${LIB_NAME}/Statement.h

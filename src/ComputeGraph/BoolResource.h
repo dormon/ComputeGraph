@@ -3,7 +3,7 @@
 #include <ComputeGraph/BoolResourceType.h>
 #include <ComputeGraph/Resource.h>
 
-class COMPUTEGRAPH_EXPORT ComputeGraph::BoolResource : public Resource {
+class COMPUTEGRAPH_EXPORT ComputeGraph::BoolResource final : public Resource {
   public:
   BoolResource(bool b);
   void update(bool b);

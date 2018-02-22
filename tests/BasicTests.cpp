@@ -6,9 +6,9 @@
 using namespace ComputeGraph;
 
 template <typename T>
-class AtomicResourceType : public CustomResourceType {
+class AtomicResourceType : public ResourceType {
   public:
-  bool equal(std::shared_ptr<CustomResourceType> const& other) const override {
+  bool equal(std::shared_ptr<ResourceType> const& other) const override {
     auto const typedOther =
         std::dynamic_pointer_cast<AtomicResourceType<T>>(other);
     return typedOther != nullptr;
